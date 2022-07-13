@@ -6,7 +6,7 @@ jQuery(function ($) {
   "use strict";
 
   var sidebarMenu = $("#sidebar_container");
-  var sidebarLinks = $("#sidebar_container a");
+  // var sidebarLinks = $("#sidebar_container a");
   var openMenu = $(".menu-opener");
   var openMenuIcon = $(".menu-opener .bi");
 

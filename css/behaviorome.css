@@ -170,11 +170,11 @@ a:hover {
   padding: 5px;
 }
 .navbar .container-fluid .col-left {
-  gap: 20px;
+  gap: 30px;
 }
 .navbar .container-fluid .col-right {
   justify-content: flex-end;
-  gap: 20px;
+  gap: 30px;
 }
 .navbar .container-fluid .menu-opener {
   color: white;
