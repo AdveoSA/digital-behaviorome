@@ -135,9 +135,10 @@ a:hover {
 }
 
 #sidebar_container {
+  display: none;
   z-index: 100;
   padding: 20px;
-  position: absolute;
+  position: fixed;
   height: auto;
   width: 350px;
   top: 70px;
@@ -184,6 +185,7 @@ a:hover {
   line-height: 45px;
   border-radius: 4px;
   transition: all ease 200ms;
+  cursor: pointer;
 }
 .navbar .container-fluid .menu-opener:hover {
   transition: all ease 300ms;
