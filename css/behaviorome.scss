@@ -1,7 +1,8 @@
-$primary: #ffa839;
+$primary: #008cf0;
 $secondary: #503380;
 $text: #333;
-$accent: #ff8531;
+$accent: #006bb7;
+$lightBlue: #c5e4fb;
 $background: #f5f5f5;
 $transparent: rgba(255, 255, 255, 0);
 
@@ -202,7 +203,7 @@ a {
 }
 
 .sub-navbar {
-  background-color: #fbf4ee;
+  background-color: $lightBlue;
   padding: 90px 0 30px;
 }
 
@@ -249,7 +250,7 @@ a {
 .card {
   width: 280px !important;
   height: 320px;
-  background-color: #f8f8f8;
+  background-color: $background;
 }
 
 .creator {

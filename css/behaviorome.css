@@ -17,7 +17,7 @@ h5 {
 hr {
   border: 0;
   max-width: 90%;
-  border-top: 1px solid #ffa839;
+  border-top: 1px solid #008cf0;
   opacity: 0.55;
 }
 
@@ -110,7 +110,7 @@ ul {
 .tt-suggestion.tt-cursor,
 .tt-suggestion:hover {
   color: #fff;
-  background-color: #ffa839;
+  background-color: #008cf0;
 }
 
 .tt-suggestion p {
@@ -118,11 +118,11 @@ ul {
 }
 
 a {
-  color: #ffa839;
+  color: #008cf0;
   text-decoration: none;
 }
 a:hover {
-  color: #ff8531;
+  color: #006bb7;
 }
 
 #content {
@@ -132,7 +132,7 @@ a:hover {
 #content .col-12 .section {
   padding-top: 45px;
   margin-top: 45px;
-  border-top: 2px solid #ffa839;
+  border-top: 2px solid #008cf0;
 }
 #content .col-12 .section:first-of-type {
   margin-top: 0;
@@ -168,16 +168,16 @@ a:hover {
 #sidebar_container .btn-toggle-nav a:active, #sidebar_container .btn-toggle-nav a:focus, #sidebar_container .btn-toggle-nav a:hover {
   outline: none;
   background-color: white;
-  color: #ff8531;
+  color: #006bb7;
 }
 
 .sub-navbar {
-  background-color: #fbf4ee;
+  background-color: #c5e4fb;
   padding: 90px 0 30px;
 }
 
 .navbar {
-  background-color: #ffa839;
+  background-color: #008cf0;
   position: fixed;
   width: 100%;
   height: 60px;
@@ -208,7 +208,7 @@ a:hover {
 .navbar .container .menu-opener:hover {
   transition: all ease 300ms;
   background-color: white;
-  color: #ff8531;
+  color: #006bb7;
 }
 
 .card-img-top {
@@ -219,7 +219,7 @@ a:hover {
 .card {
   width: 280px !important;
   height: 320px;
-  background-color: #f8f8f8;
+  background-color: #f5f5f5;
 }
 
 .creator {
@@ -245,16 +245,16 @@ a:hover {
 }
 
 .tabulator-header {
-  background-color: #ffa839 !important;
+  background-color: #008cf0 !important;
   color: white !important;
 }
 
 .tabulator-col {
-  background-color: #ffa839 !important;
+  background-color: #008cf0 !important;
 }
 
 .tabulator {
-  background-color: #ffa839 !important;
+  background-color: #008cf0 !important;
 }
 
 .tabulator-arrow {
@@ -263,7 +263,7 @@ a:hover {
 
 .tabulator-footer {
   color: white !important;
-  background-color: #ffa839 !important;
+  background-color: #008cf0 !important;
 }
 
 .tabulator-page {
@@ -306,7 +306,7 @@ a:hover {
 
 .dropdown-menu.show {
   display: block;
-  background-color: #ffa839;
+  background-color: #008cf0;
 }
 
 #example_correlation_img {
