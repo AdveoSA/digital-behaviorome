@@ -55,43 +55,56 @@
 <body>
 
 <nav class="navbar navbar-light">
-    <div class="container-fluid">
-        <div class="d-flex col-left">
-            <div style="height:50px; " href="#" class="d-flex align-items-left me-2 link-dark text-decoration-none">
-                <span><a href="https://www.domo-safety.com/en/"><img height="50" src="svgs/DomoLogoWithName.svg"></a></span>
-                <span><a href="https://www.unibe.ch"><img height="50" src="svgs/UnibeLogoPure.svg"></a></span>
+    <div class="container">
+
+        <!-- <div class="row"> -->
+            <div class="d-flex col-left">
+                <!-- <div style="height:50px; " href="#" class="d-flex align-items-left me-2 link-dark text-decoration-none">
+                    <span><a href="https://www.domo-safety.com/en/"><img height="50" src="svgs/DomoLogoWithName.svg"></a></span>
+                    <span><a href="https://www.unibe.ch"><img height="50" src="svgs/UnibeLogoPure.svg"></a></span>
+                </div> -->
+                <!-- <a href="#" class="d-flex align-items-center me-2 link-dark text-decoration-none">
+                    <span class="fs-5 fw-semibold" style="color: white;">An Unobtrusive Digital Behaviorome</span>
+                </a> -->
+                <div>
+                    <button class="btn btn-close-white" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="modal" data-bs-target="#summaryTableModal" aria-expanded="false">
+                        <i class="fa fa-table" aria-hidden="true"></i>
+                        Summary Table
+                    </button>
+                </div>
+                <form class="d-flex">
+                    <div id="search">
+                        <input style="max-width: 224px;" class="form-control me-2 typeahead" type="search" placeholder="Search Measure" aria-label="Search">
+                    </div>
+                </form>
+                <form class="d-flex">
+                    <div id="search_derivates">
+                        <input style="max-width: 224px;" class="form-control me-2 typeahead" type="search" placeholder="Search Measure ID" aria-label="Search">
+                    </div>
+                </form>
             </div>
-            <span class="menu-opener">
-                <i class="bi bi-list"></i>
-            </span>
-            <a href="#" class="d-flex align-items-center me-2 link-dark text-decoration-none">
-                <span class="fs-5 fw-semibold" style="color: white;">An Unobtrusive Digital Behaviorome</span>
-            </a>
+
+
+            <div class="d-flex col-right">
+                <span class="menu-opener">
+                    <i class="bi bi-list"></i>
+                </span>
+            </div>
         </div>
 
-
-        <div class="d-flex col-right">
-            <div>
-                <button class="btn btn-close-white" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="modal" data-bs-target="#summaryTableModal" aria-expanded="false">
-                    <i class="fa fa-table" aria-hidden="true"></i>
-                    Summary Table
-                </button>
-            </div>
-            <form class="d-flex">
-                <div id="search">
-                    <input style="max-width: 224px;" class="form-control me-2 typeahead" type="search" placeholder="Search Measure" aria-label="Search">
-                </div>
-            </form>
-            <form class="d-flex">
-                <div id="search_derivates">
-                    <input style="max-width: 224px;" class="form-control me-2 typeahead" type="search" placeholder="Search Measure ID" aria-label="Search">
-                </div>
-            </form>
-        </div>
-
-    </div>
+    <!-- </div> -->
 </nav>
+
+<div class="sub-navbar">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-center">
+            <span><a href="https://www.unibe.ch"><img height="90" src="svgs/logo_unibern.png"></a></span>
+            <span><a href="https://www.domo-safety.com/en/"><img height="70" src="svgs/DOMO.svg"></a></span>
+            <span><a href="https://www.insel.ch/de/"><img height="90" src="svgs/InselSpital_Logo.svg"></a></span>
+        </div>
+    </div>
+</div>
 
 
 
@@ -118,160 +131,160 @@
         <div id="sidebar_container" class="bg-light">
             <div>
 
-    <ul class="list-unstyled ps-0">
-        <li class="mb-1">
-            <button  class="btn btn-toggle align-items-center rounded">
-                <a style="color: inherit; text-decoration: none;" href="#introduction">Introduction</a>
-            </button>
-        </li>
-        <li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#auhmhypovu" aria-expanded="false">
-                    Examples
-                </button>
-                <div class="collapse hide sidebar-container" id="auhmhypovu">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="#examples1" class="link-dark rounded">Cognition</a></li>
-<li><a href="#examples2" class="link-dark rounded">Gait and Balance</a></li>
-                    </ul>
-                </div>
-            </li>
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button  class="btn btn-toggle align-items-center rounded">
+                            <a style="color: inherit; text-decoration: none;" href="#introduction">Introduction</a>
+                        </button>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#auhmhypovu" aria-expanded="false">
+                            <a style="color: inherit; text-decoration: none;" href="#examples1">Examples</a>
+                        </button>
+                        <div class="collapse hide sidebar-container" id="auhmhypovu">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#examples1" class="link-dark rounded">Cognition</a></li>
+                                <li><a href="#examples2" class="link-dark rounded">Gait and Balance</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
-<li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#jmafjseuli" aria-expanded="false">
-                    Health Outcomes and Indicators
-                </button>
-                <div class="collapse hide sidebar-container" id="jmafjseuli">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="#tug" class="link-dark rounded">Timed Up & Go Test</a></li>
-<li><a href="#poma" class="link-dark rounded">Performance Oriented Mobility Assessment</a></li>
-<li><a href="#knee" class="link-dark rounded">Knee Extensor Strength</a></li>
-<li><a href="#hip" class="link-dark rounded">Hip Flexor Strength</a></li>
-<li><a href="#handgrip" class="link-dark rounded">Handgrip Strength</a></li>
-<li><a href="#moca" class="link-dark rounded">Montreal Cognitive Assessment</a></li>
-<li><a href="#gds" class="link-dark rounded">Geratric Depression Scale</a></li>
-<li><a href="#eqvas" class="link-dark rounded">EQ5D EQ-VAS</a></li>
-<li><a href="#eq5d3l" class="link-dark rounded">EQ5D-3L Classes of Problems</a></li>
-<li><a href="#eq5d3l" class="link-dark rounded">Subjective Participant Feelings</a></li>
-<li><a href="#efs" class="link-dark rounded">Edmonton Frail Scale</a></li>
-                    </ul>
-                </div>
-            </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#jmafjseuli" aria-expanded="false">
+                            <a style="color: inherit; text-decoration: none;" href="#health_indicators">Health Outcomes and Indicators</a>
+                        </button>
+                        <div class="collapse hide sidebar-container" id="jmafjseuli">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#tug" class="link-dark rounded">Timed Up & Go Test</a></li>
+                                <li><a href="#poma" class="link-dark rounded">Performance Oriented Mobility Assessment</a></li>
+                                <li><a href="#knee" class="link-dark rounded">Knee Extensor Strength</a></li>
+                                <li><a href="#hip" class="link-dark rounded">Hip Flexor Strength</a></li>
+                                <li><a href="#handgrip" class="link-dark rounded">Handgrip Strength</a></li>
+                                <li><a href="#moca" class="link-dark rounded">Montreal Cognitive Assessment</a></li>
+                                <li><a href="#gds" class="link-dark rounded">Geratric Depression Scale</a></li>
+                                <li><a href="#eqvas" class="link-dark rounded">EQ5D EQ-VAS</a></li>
+                                <li><a href="#eq5d3l" class="link-dark rounded">EQ5D-3L Classes of Problems</a></li>
+                                <li><a href="#eq5d3l" class="link-dark rounded">Subjective Participant Feelings</a></li>
+                                <li><a href="#efs" class="link-dark rounded">Edmonton Frail Scale</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
-<li class="mb-1">
-                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#uqjpsmylxc" aria-expanded="false">
-                    Measures
-                </button>
-                <div class="collapse hide sidebar-container" id="uqjpsmylxc">
-                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                        <li><a href="#activity_fragmentation" class="link-dark rounded">Activity Fragmentation</a></li>
-<li><a href="#one_component_acrophase" class="link-dark rounded">Cosinor Single Component Acrophase</a></li>
-<li><a href="#multi_component_acrophase" class="link-dark rounded">Cosinor Multi Component Acrophase</a></li>
-<li><a href="#one_component_mesor" class="link-dark rounded">Cosinor Single Component Mesor</a></li>
-<li><a href="#multi_component_mesor" class="link-dark rounded">Cosinor Multi Component Mesor</a></li>
-<li><a href="#one_component_amplitude" class="link-dark rounded">Cosinor Single Component Amplitude</a></li>
-<li><a href="#multi_component_amplitude" class="link-dark rounded">Cosinor Multi Component Amplitude</a></li>
-<li><a href="#multi_component_n" class="link-dark rounded">Cosinor Number of Components</a></li>
-<li><a href="#fridge_usage" class="link-dark rounded">Raw Fridge Usage</a></li>
-<li><a href="#fridge_usage_5min_epochs" class="link-dark rounded">Fridge Usage Epochs</a></li>
-<li><a href="#outing_count" class="link-dark rounded">Daily Outing Number</a></li>
-<li><a href="#outing_duration" class="link-dark rounded">Daily Total Outing Duration</a></li>
-<li><a href="#visit_score" class="link-dark rounded">Daily Visit Score</a></li>
-<li><a href="#number_entrance_door_events" class="link-dark rounded">Daily Number of Entrance Door Events</a></li>
-<li><a href="#entrance_door_tod" class="link-dark rounded">Daily Time of Day Entrance Door</a></li>
-<li><a href="#fridge_door_tod" class="link-dark rounded">Daily Time of Day Fridge Door</a></li>
-<li><a href="#toilet_usage_number" class="link-dark rounded">Daily Bathroom Usage Number</a></li>
-<li><a href="#toilet_usage_tod" class="link-dark rounded">Bathroom Usage Time of Day</a></li>
-<li><a href="#intradaily_variability" class="link-dark rounded">Intradaily Variability</a></li>
-<li><a href="#intradaily_stability" class="link-dark rounded">Intradaily Stability</a></li>
-<li><a href="#spectral_entropy" class="link-dark rounded">Spectral Entropy of Activity</a></li>
-<li><a href="#lfhf" class="link-dark rounded">LF-HF Power Ratio</a></li>
-<li><a href="#wavelet_variance" class="link-dark rounded">Wavelet Variance</a></li>
-<li><a href="#norm_amplitude" class="link-dark rounded">Normalized Activity Bandpowers</a></li>
-<li><a href="#entropy_fridge" class="link-dark rounded">Fridge Usage Entropy</a></li>
-<li><a href="#entropy_entrance" class="link-dark rounded">Entrance Door Entropy</a></li>
-<li><a href="#total_entropy" class="link-dark rounded">PIR Activity Entropy</a></li>
-<li><a href="#pir_reconstruction_error" class="link-dark rounded">Eigenbehavior Reconstruction Error</a></li>
-<li><a href="#activity_island_count" class="link-dark rounded">Activity Island Number</a></li>
-<li><a href="#activity_island_duration" class="link-dark rounded">Activity Island Duration</a></li>
-<li><a href="#activity_counts" class="link-dark rounded">Activity Counts</a></li>
-<li><a href="#raw_activity_sum_seconds" class="link-dark rounded">Raw Activity</a></li>
-<li><a href="#transition_count" class="link-dark rounded">Daily Room-Transition Counts</a></li>
-<li><a href="#mean_transition_duration" class="link-dark rounded">Daily Mean Room-Transition Duration</a></li>
-<li><a href="#mean_morning_transition_duration" class="link-dark rounded">Daily Mean Room-Transition Duration Morning</a></li>
-<li><a href="#mean_evening_transition_duration" class="link-dark rounded">Daily Mean Room-Transition Duration Evening</a></li>
-<li><a href="#morning_evening_transition_ratio" class="link-dark rounded">Daily Mean Room-Transition Duration Ratio</a></li>
-<li><a href="#deviation_from_even_ratio" class="link-dark rounded">Daily Mean Room-Transition Duration Ratio Deviation</a></li>
-<li><a href="#bed_hr" class="link-dark rounded">Nightly Heart Rate Summary Statistics</a></li>
-<li><a href="#bed_hr_q75_q25" class="link-dark rounded">Nocturnal Heart Rate Dipping</a></li>
-<li><a href="#bed_hr_power" class="link-dark rounded">Nightly Heart Rate Average Power</a></li>
-<li><a href="#bed_hr_spectral_entropy" class="link-dark rounded">Nightly Heart Rate Spectral Entropy</a></li>
-<li><a href="#bed_rr" class="link-dark rounded">Nightly Respiration Rate Summary Statistics</a></li>
-<li><a href="#bed_rr_q75_q25" class="link-dark rounded">Nocturnal Respiration Rate Dipping</a></li>
-<li><a href="#bed_rr_power" class="link-dark rounded">Nightly Respiration Rate Average Power</a></li>
-<li><a href="#bed_rr_spectral_entropy" class="link-dark rounded">Nightly Respiration Rate Spectral Entropy</a></li>
-<li><a href="#bed_act" class="link-dark rounded">Nightly Bed Activity Summary Statistics</a></li>
-<li><a href="#bed_act_power" class="link-dark rounded">Nightly Bed Activity Average Power</a></li>
-<li><a href="#bed_act_spectral_entropy" class="link-dark rounded">Nightly Bed Activity Spectral Entropy</a></li>
-<li><a href="#bed_number_activity_islands" class="link-dark rounded">In-Bed Activity Island Count</a></li>
-<li><a href="#bed_activity_island_duration" class="link-dark rounded">In-Bed Activity Island Duration Statistics</a></li>
-<li><a href="#n_arousal_transitions" class="link-dark rounded">In-Bed Arousal Counts</a></li>
-<li><a href="#arousal_probability" class="link-dark rounded">In-Bed Arousal Probability</a></li>
-<li><a href="#percentage_active_in_bed" class="link-dark rounded">Percentage Active in Bed</a></li>
-<li><a href="#bed_duration" class="link-dark rounded">Duration Total</a></li>
-<li><a href="#bed_duration_in_bed" class="link-dark rounded">Duration In-Bed</a></li>
-<li><a href="#bed_bedexit_count" class="link-dark rounded">Nightly Bed-exit Count</a></li>
-<li><a href="#bed_tossnturn_count" class="link-dark rounded">Number of Toss-and-Turns per Night</a></li>
-<li><a href="#bed_avg_hr" class="link-dark rounded">Average In-Bed Heart Rate</a></li>
-<li><a href="#bed_avg_rr" class="link-dark rounded">Average In-Bed Respiration Rate</a></li>
-<li><a href="#bed_avg_act" class="link-dark rounded">Average In-Bed Activity</a></li>
-<li><a href="#bed_duration_in_sleep" class="link-dark rounded">Nightly Duration Asleep</a></li>
-<li><a href="#bed_duration_awake" class="link-dark rounded">Nightly Duration Awake In-Bed</a></li>
-<li><a href="#bed_duration_sleep_onset" class="link-dark rounded">Sleep Onset Delay</a></li>
-<li><a href="#bed_bedexit_duration" class="link-dark rounded">Nightly Bedexit Duration</a></li>
-<li><a href="#bed_duration_in_rem" class="link-dark rounded">Nightly REM Sleep Duration</a></li>
-<li><a href="#bed_duration_in_light" class="link-dark rounded">Nightly Light Sleep Duration</a></li>
-<li><a href="#bed_duration_in_deep" class="link-dark rounded">Nightly Deep Sleep Duration</a></li>
-<li><a href="#bed_hrv_lf" class="link-dark rounded">Nightly Heart Rate Variability LF</a></li>
-<li><a href="#bed_hrv_hf" class="link-dark rounded">Nightly Heart Rate Variability HF</a></li>
-<li><a href="#bed_awakenings" class="link-dark rounded">Number of Awakenings per Night</a></li>
-<li><a href="#bed_percentage_deep" class="link-dark rounded">Percentage in Deep Sleep</a></li>
-<li><a href="#bed_percentage_light" class="link-dark rounded">Percentage in Light Sleep</a></li>
-<li><a href="#bed_percentage_rem" class="link-dark rounded">Percentage in REM Sleep</a></li>
-<li><a href="#bed_percentage_awake" class="link-dark rounded">Percentage Awake</a></li>
-<li><a href="#bed_sleep_efficiency" class="link-dark rounded">Sleep Efficiency</a></li>
-<li><a href="#bed_bedexit_duration_median" class="link-dark rounded">Bed-exit Duration Statistics</a></li>
-<li><a href="#bed_nocturia_count" class="link-dark rounded">Nightly Nocturia Count</a></li>
-<li><a href="#bed_awake_sleep_hr" class="link-dark rounded">Average Nightly Heart Rate during Awake State</a></li>
-<li><a href="#bed_awake_sleep_rr" class="link-dark rounded">Average Nightly Respiration Rate during Awake State</a></li>
-<li><a href="#bed_awake_sleep_act" class="link-dark rounded">Average Nightly Activity during Awake State</a></li>
-<li><a href="#bed_deep_sleep_hr" class="link-dark rounded">Average Nightly Heart Rate during Deep Sleep</a></li>
-<li><a href="#bed_deep_sleep_rr" class="link-dark rounded">Average Nightly Respiration Rate during Deep Sleep</a></li>
-<li><a href="#bed_deep_sleep_act" class="link-dark rounded">Average Nightly Activity during Deep Sleep</a></li>
-<li><a href="#bed_light_sleep_hr" class="link-dark rounded">Average Nightly Heart Rate during Light Sleep</a></li>
-<li><a href="#bed_light_sleep_rr" class="link-dark rounded">Average Nightly Respiration Rate during Light Sleep</a></li>
-<li><a href="#bed_light_sleep_act" class="link-dark rounded">Average Nightly Activity during Light Sleep</a></li>
-<li><a href="#bed_rem_sleep_hr" class="link-dark rounded">Average Nightly Heart Rate during REM Sleep</a></li>
-<li><a href="#bed_rem_sleep_rr" class="link-dark rounded">Average Nightly Respiration Rate during REM Sleep</a></li>
-<li><a href="#bed_rem_sleep_act" class="link-dark rounded">Average Nightly Activity during REM Sleep</a></li>
-<li><a href="#sleep_reconstruction_error" class="link-dark rounded">Sleep Reconstruction Error</a></li>
-<li><a href="#bed_heart_rate_1min_scale" class="link-dark rounded">One Minute Scale Heart Rate</a></li>
-<li><a href="#bed_respiration_rate_1min" class="link-dark rounded">One Minute Scale Respiration Rate</a></li>
-<li><a href="#bed_activity_1min" class="link-dark rounded">One Minute Scale In-Bed Activity</a></li>
-                    </ul>
-                </div>
-            </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#uqjpsmylxc" aria-expanded="false">
+                            <a style="color: inherit; text-decoration: none;" href="#digital_measures">Digital Measures</a>
+                        </button>
+                        <div class="collapse hide sidebar-container" id="uqjpsmylxc">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#activity_fragmentation" class="link-dark rounded">Activity Fragmentation</a></li>
+                                <li><a href="#one_component_acrophase" class="link-dark rounded">Cosinor Single Component Acrophase</a></li>
+                                <li><a href="#multi_component_acrophase" class="link-dark rounded">Cosinor Multi Component Acrophase</a></li>
+                                <li><a href="#one_component_mesor" class="link-dark rounded">Cosinor Single Component Mesor</a></li>
+                                <li><a href="#multi_component_mesor" class="link-dark rounded">Cosinor Multi Component Mesor</a></li>
+                                <li><a href="#one_component_amplitude" class="link-dark rounded">Cosinor Single Component Amplitude</a></li>
+                                <li><a href="#multi_component_amplitude" class="link-dark rounded">Cosinor Multi Component Amplitude</a></li>
+                                <li><a href="#multi_component_n" class="link-dark rounded">Cosinor Number of Components</a></li>
+                                <li><a href="#fridge_usage" class="link-dark rounded">Raw Fridge Usage</a></li>
+                                <li><a href="#fridge_usage_5min_epochs" class="link-dark rounded">Fridge Usage Epochs</a></li>
+                                <li><a href="#outing_count" class="link-dark rounded">Daily Outing Number</a></li>
+                                <li><a href="#outing_duration" class="link-dark rounded">Daily Total Outing Duration</a></li>
+                                <li><a href="#visit_score" class="link-dark rounded">Daily Visit Score</a></li>
+                                <li><a href="#number_entrance_door_events" class="link-dark rounded">Daily Number of Entrance Door Events</a></li>
+                                <li><a href="#entrance_door_tod" class="link-dark rounded">Daily Time of Day Entrance Door</a></li>
+                                <li><a href="#fridge_door_tod" class="link-dark rounded">Daily Time of Day Fridge Door</a></li>
+                                <li><a href="#toilet_usage_number" class="link-dark rounded">Daily Bathroom Usage Number</a></li>
+                                <li><a href="#toilet_usage_tod" class="link-dark rounded">Bathroom Usage Time of Day</a></li>
+                                <li><a href="#intradaily_variability" class="link-dark rounded">Intradaily Variability</a></li>
+                                <li><a href="#intradaily_stability" class="link-dark rounded">Intradaily Stability</a></li>
+                                <li><a href="#spectral_entropy" class="link-dark rounded">Spectral Entropy of Activity</a></li>
+                                <li><a href="#lfhf" class="link-dark rounded">LF-HF Power Ratio</a></li>
+                                <li><a href="#wavelet_variance" class="link-dark rounded">Wavelet Variance</a></li>
+                                <li><a href="#norm_amplitude" class="link-dark rounded">Normalized Activity Bandpowers</a></li>
+                                <li><a href="#entropy_fridge" class="link-dark rounded">Fridge Usage Entropy</a></li>
+                                <li><a href="#entropy_entrance" class="link-dark rounded">Entrance Door Entropy</a></li>
+                                <li><a href="#total_entropy" class="link-dark rounded">PIR Activity Entropy</a></li>
+                                <li><a href="#pir_reconstruction_error" class="link-dark rounded">Eigenbehavior Reconstruction Error</a></li>
+                                <li><a href="#activity_island_count" class="link-dark rounded">Activity Island Number</a></li>
+                                <li><a href="#activity_island_duration" class="link-dark rounded">Activity Island Duration</a></li>
+                                <li><a href="#activity_counts" class="link-dark rounded">Activity Counts</a></li>
+                                <li><a href="#raw_activity_sum_seconds" class="link-dark rounded">Raw Activity</a></li>
+                                <li><a href="#transition_count" class="link-dark rounded">Daily Room-Transition Counts</a></li>
+                                <li><a href="#mean_transition_duration" class="link-dark rounded">Daily Mean Room-Transition Duration</a></li>
+                                <li><a href="#mean_morning_transition_duration" class="link-dark rounded">Daily Mean Room-Transition Duration Morning</a></li>
+                                <li><a href="#mean_evening_transition_duration" class="link-dark rounded">Daily Mean Room-Transition Duration Evening</a></li>
+                                <li><a href="#morning_evening_transition_ratio" class="link-dark rounded">Daily Mean Room-Transition Duration Ratio</a></li>
+                                <li><a href="#deviation_from_even_ratio" class="link-dark rounded">Daily Mean Room-Transition Duration Ratio Deviation</a></li>
+                                <li><a href="#bed_hr" class="link-dark rounded">Nightly Heart Rate Summary Statistics</a></li>
+                                <li><a href="#bed_hr_q75_q25" class="link-dark rounded">Nocturnal Heart Rate Dipping</a></li>
+                                <li><a href="#bed_hr_power" class="link-dark rounded">Nightly Heart Rate Average Power</a></li>
+                                <li><a href="#bed_hr_spectral_entropy" class="link-dark rounded">Nightly Heart Rate Spectral Entropy</a></li>
+                                <li><a href="#bed_rr" class="link-dark rounded">Nightly Respiration Rate Summary Statistics</a></li>
+                                <li><a href="#bed_rr_q75_q25" class="link-dark rounded">Nocturnal Respiration Rate Dipping</a></li>
+                                <li><a href="#bed_rr_power" class="link-dark rounded">Nightly Respiration Rate Average Power</a></li>
+                                <li><a href="#bed_rr_spectral_entropy" class="link-dark rounded">Nightly Respiration Rate Spectral Entropy</a></li>
+                                <li><a href="#bed_act" class="link-dark rounded">Nightly Bed Activity Summary Statistics</a></li>
+                                <li><a href="#bed_act_power" class="link-dark rounded">Nightly Bed Activity Average Power</a></li>
+                                <li><a href="#bed_act_spectral_entropy" class="link-dark rounded">Nightly Bed Activity Spectral Entropy</a></li>
+                                <li><a href="#bed_number_activity_islands" class="link-dark rounded">In-Bed Activity Island Count</a></li>
+                                <li><a href="#bed_activity_island_duration" class="link-dark rounded">In-Bed Activity Island Duration Statistics</a></li>
+                                <li><a href="#n_arousal_transitions" class="link-dark rounded">In-Bed Arousal Counts</a></li>
+                                <li><a href="#arousal_probability" class="link-dark rounded">In-Bed Arousal Probability</a></li>
+                                <li><a href="#percentage_active_in_bed" class="link-dark rounded">Percentage Active in Bed</a></li>
+                                <li><a href="#bed_duration" class="link-dark rounded">Duration Total</a></li>
+                                <li><a href="#bed_duration_in_bed" class="link-dark rounded">Duration In-Bed</a></li>
+                                <li><a href="#bed_bedexit_count" class="link-dark rounded">Nightly Bed-exit Count</a></li>
+                                <li><a href="#bed_tossnturn_count" class="link-dark rounded">Number of Toss-and-Turns per Night</a></li>
+                                <li><a href="#bed_avg_hr" class="link-dark rounded">Average In-Bed Heart Rate</a></li>
+                                <li><a href="#bed_avg_rr" class="link-dark rounded">Average In-Bed Respiration Rate</a></li>
+                                <li><a href="#bed_avg_act" class="link-dark rounded">Average In-Bed Activity</a></li>
+                                <li><a href="#bed_duration_in_sleep" class="link-dark rounded">Nightly Duration Asleep</a></li>
+                                <li><a href="#bed_duration_awake" class="link-dark rounded">Nightly Duration Awake In-Bed</a></li>
+                                <li><a href="#bed_duration_sleep_onset" class="link-dark rounded">Sleep Onset Delay</a></li>
+                                <li><a href="#bed_bedexit_duration" class="link-dark rounded">Nightly Bedexit Duration</a></li>
+                                <li><a href="#bed_duration_in_rem" class="link-dark rounded">Nightly REM Sleep Duration</a></li>
+                                <li><a href="#bed_duration_in_light" class="link-dark rounded">Nightly Light Sleep Duration</a></li>
+                                <li><a href="#bed_duration_in_deep" class="link-dark rounded">Nightly Deep Sleep Duration</a></li>
+                                <li><a href="#bed_hrv_lf" class="link-dark rounded">Nightly Heart Rate Variability LF</a></li>
+                                <li><a href="#bed_hrv_hf" class="link-dark rounded">Nightly Heart Rate Variability HF</a></li>
+                                <li><a href="#bed_awakenings" class="link-dark rounded">Number of Awakenings per Night</a></li>
+                                <li><a href="#bed_percentage_deep" class="link-dark rounded">Percentage in Deep Sleep</a></li>
+                                <li><a href="#bed_percentage_light" class="link-dark rounded">Percentage in Light Sleep</a></li>
+                                <li><a href="#bed_percentage_rem" class="link-dark rounded">Percentage in REM Sleep</a></li>
+                                <li><a href="#bed_percentage_awake" class="link-dark rounded">Percentage Awake</a></li>
+                                <li><a href="#bed_sleep_efficiency" class="link-dark rounded">Sleep Efficiency</a></li>
+                                <li><a href="#bed_bedexit_duration_median" class="link-dark rounded">Bed-exit Duration Statistics</a></li>
+                                <li><a href="#bed_nocturia_count" class="link-dark rounded">Nightly Nocturia Count</a></li>
+                                <li><a href="#bed_awake_sleep_hr" class="link-dark rounded">Average Nightly Heart Rate during Awake State</a></li>
+                                <li><a href="#bed_awake_sleep_rr" class="link-dark rounded">Average Nightly Respiration Rate during Awake State</a></li>
+                                <li><a href="#bed_awake_sleep_act" class="link-dark rounded">Average Nightly Activity during Awake State</a></li>
+                                <li><a href="#bed_deep_sleep_hr" class="link-dark rounded">Average Nightly Heart Rate during Deep Sleep</a></li>
+                                <li><a href="#bed_deep_sleep_rr" class="link-dark rounded">Average Nightly Respiration Rate during Deep Sleep</a></li>
+                                <li><a href="#bed_deep_sleep_act" class="link-dark rounded">Average Nightly Activity during Deep Sleep</a></li>
+                                <li><a href="#bed_light_sleep_hr" class="link-dark rounded">Average Nightly Heart Rate during Light Sleep</a></li>
+                                <li><a href="#bed_light_sleep_rr" class="link-dark rounded">Average Nightly Respiration Rate during Light Sleep</a></li>
+                                <li><a href="#bed_light_sleep_act" class="link-dark rounded">Average Nightly Activity during Light Sleep</a></li>
+                                <li><a href="#bed_rem_sleep_hr" class="link-dark rounded">Average Nightly Heart Rate during REM Sleep</a></li>
+                                <li><a href="#bed_rem_sleep_rr" class="link-dark rounded">Average Nightly Respiration Rate during REM Sleep</a></li>
+                                <li><a href="#bed_rem_sleep_act" class="link-dark rounded">Average Nightly Activity during REM Sleep</a></li>
+                                <li><a href="#sleep_reconstruction_error" class="link-dark rounded">Sleep Reconstruction Error</a></li>
+                                <li><a href="#bed_heart_rate_1min_scale" class="link-dark rounded">One Minute Scale Heart Rate</a></li>
+                                <li><a href="#bed_respiration_rate_1min" class="link-dark rounded">One Minute Scale Respiration Rate</a></li>
+                                <li><a href="#bed_activity_1min" class="link-dark rounded">One Minute Scale In-Bed Activity</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
-        <li class="mb-1">
-            <button  class="btn btn-toggle align-items-center rounded">
-                <a style="color: inherit; text-decoration: none;" href="#references">References</a>
-            </button>
-        </li>
-        <li class="mb-1">
-            <button  class="btn btn-toggle align-items-center rounded">
-                <a style="color: inherit; text-decoration: none;" href="#about">About</a>
-            </button>
-        </li>
-    </ul>
+                    <li class="mb-1">
+                        <button  class="btn btn-toggle align-items-center rounded">
+                            <a style="color: inherit; text-decoration: none;" href="#references">References</a>
+                        </button>
+                    </li>
+                    <li class="mb-1">
+                        <button  class="btn btn-toggle align-items-center rounded">
+                            <a style="color: inherit; text-decoration: none;" href="#about">About</a>
+                        </button>
+                    </li>
+                </ul>
 
             </div>
         </div>
@@ -280,12 +293,12 @@
             <div class="row">
                 <div class="col-12">
 
-                    <div id="introduction" class="row">
+                    <div id="introduction" class="row section">
                         <div class="col">
                             <H1 style="text-align: center">An Unobtrusive and Privacy-Preserving Digital Behaviorome</H1>
                             <img style="margin-bottom: 20px; margin-left: 10px; width: 100%; max-width: 900px;" src="figures/web_frontpage.png">
                             <br>
-                            <H2>Introduction</H2>
+                            <H2 class="section-title">1. Introduction</H2>
                             <p>
                                 This site describes a set of digital measures of health that can be extracted from passive
                                 infrared (PIR) motion sensors, door sensors and a bed sensor.
@@ -328,9 +341,9 @@
                         </div>
                     </div>
 
-                    <div id="examples1" class="row">
+                    <div id="examples1" class="row section">
                         <div class="col">
-                            <H2>Examples</H2>
+                            <H2 class="section-title">2. Examples</H2>
                             <p>
                                 What follows are two examples of behavioromes.
                                 Please note that these are meant to be for illustrative
@@ -377,9 +390,9 @@
                     </div>
 
 
-                    <div id="health_indicators" class="row">
+                    <div id="health_indicators" class="row section">
                         <div class="col">
-                            <H2>Correlations with Health Indicators and Outcomes</H2>
+                            <H2 class="section-title">3. Correlations with Health Indicators and Outcomes</H2>
                             <p>
                                 As noted in the introduction, we provide Spearman rank correlation coefficients for each
                                 presented digital measure with a variety of health indicators and outcomes.
@@ -514,10 +527,9 @@
                         </div>
                     </div>
 
-
-                    <div class="row">
+                    <div id="digital_measures" class="row section">
                         <div class="col">
-                            <H2>Digital Measures</H2>
+                            <H2 class="section-title">4. Digital Measures</H2>
                         </div>
                     </div>
 
@@ -6693,18 +6705,18 @@
             </div>
 
 
-                    <div id="references" class="row bg-white">
+                    <div id="references" class="row section bg-white">
                         <div class="col">
-                            <h2>References</h2>
+                            <h2 class="section-title">5. References</h2>
                             <ol>
                                 <li><p id="sleepfragmentation">Andrew SP Lim, Matthew Kowgier, Lei Yu, Aron S Buchman, David A Bennett. Sleep fragmentation and the risk of incident Alzheimer's disease and cognitive decline in older persons. <em>Sleep</em>. 2013</p></li><li><p id="overviewcosinorcoefs">Germaine Cornelissen. Cosinor-based rhythmometry. <em>Theoretical Biology and Medical Modelling</em>. 2014</p></li><li><p id="circadiandementia">Peng Li, Lei Gao, Arlen Gaba, Lei Yu, Longchang Cui, Wenqing Fan, Andrew SP Lim, David A Bennett, Aron S Buchman, Kun Hu. Circadian disturbances in Alzheimer's disease progression: a prospective observational cohort study of community-based older adults. <em>The Lancet Healthy Longevity</em>. 2020</p></li><li><p id="acrophasedepression">Stephen F Smagula. Opportunities for clinical applications of rest-activity rhythms in detecting and preventing mood disorders. <em>Current opinion in psychiatry</em>. 2016</p></li><li><p id="validityphysicalactivity">Narayan Schütz, Hugo Saner, Beatrice Rudin, Angela Botros, Bruno Pais, Valérie Santschi, Philipp Buluschek, Daniel Gatica-Perez, Prabitha Urwyler, Laura Marchal-Crespo, others. Validity of pervasive computing based continuous physical activity assessment in community-dwelling old and oldest-old. <em>Scientific reports</em>. 2019</p></li><li><p id="wearablecalibration">Narayan Schütz, Hugo Saner, Angela Amira Botros, Philipp Buluschek, Prabitha Urwyler, René Martin Müri, Tobias Nef. Wearable based Calibration of Contactless In-Home Motion Sensors for Physical Activity Monitoring in Community-Dwelling Older Adults. <em>Frontiers in Digital Health</em>. 2020</p></li><li><p id="cosinorpy">Miha Moškon. CosinorPy: a python package for cosinor-based rhythmometry. <em>BMC bioinformatics</em>. 2020</p></li><li><p id="paudel2010rest">Misti L Paudel, Brent C Taylor, Sonia Ancoli-Israel, Terri Blackwell, Katie L Stone, Greg Tranah, Susan Redline, Steven R Cummings, Kristine E Ensrud, Osteoporotic Fractures in Men (MrOS) Study Group. Rest/activity rhythms and mortality rates in older men: MrOS Sleep Study. <em>Chronobiology international</em>. 2010</p></li><li><p id="neikrug2020characterizing">Ariel B Neikrug, Ivy Y Chen, Jake R Palmer, Susan M McCurry, Michael Von Korff, Michael Perlis, Michael V Vitiello. Characterizing behavioral activity rhythms in older adults using actigraphy. <em>Sensors</em>. 2020</p></li><li><p id="minaeva2020level">Olga Minaeva, Sanne H Booij, Femke Lamers, Niki Antypa, Robert A Schoevers, Marieke Wichers, Harriëtte Riese. Level and timing of physical activity during normal daily life in depressed and non-depressed individuals. <em>Translational psychiatry</em>. 2020</p></li><li><p id="outingalgorithmkaye">Johanna Petersen, Daniel Austin, Jeffrey A Kaye, Misha Pavel, Tamara L Hayes. Unobtrusive in-home detection of time spent out-of-home with applications to loneliness and physical activity. <em>IEEE journal of biomedical and health informatics</em>. 2013</p></li><li><p id="hu2017elderly">Rui Hu, Hieu Pham, Philipp Buluschek, Daniel Gatica-Perez. Elderly people living alone: Detecting home visits with ambient and wearable sensing. <em>Proceedings of the 2nd International Workshop on Multimedia for Personal Health and Health Care</em>. 2017</p></li><li><p id="evidation2019">Richard Chen, Filip Jankovic, Nikki Marinsek, Luca Foschini, Lampros Kourtis, Alessio Signorini, Melissa Pugh, Jie Shen, Roy Yaari, Vera Maljkovic, others. Developing measures of cognitive impairment in the real world from consumer-grade multimodal sensor streams. <em>Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</em>. 2019</p></li><li><p id="sugimoto2017frontal">Taiki Sugimoto, Masaki Yoshida, Rei Ono, Shunsuke Murata, Naoki Saji, Shumpei Niida, Kenji Toba, Takashi Sakurai. Frontal lobe function correlates with one-year incidence of urinary incontinence in elderly with Alzheimer disease. <em>Journal of Alzheimer's Disease</em>. 2017</p></li><li><p id="gonccalves2014nonparametric">Bruno SB Gonç}alves, Paula RA Cavalcanti, Gracilene R Tavares, Tania F Campos, John F Araujo. Nonparametric methods in actigraphy: An update. <em>Sleep Science</em>. 2014</p></li><li><p id="urwyler2017cognitive">Prabitha Urwyler, Reto Stucki, Luca Rampa, René Müri, Urs P Mosimann, Tobias Nef. Cognitive impairment categorized in community-dwelling older adults with and without dementia using in-home sensors that recognise activities of daily living. <em>Scientific reports</em>. 2017</p></li><li><p id="hayes2008unobtrusive">Tamara L Hayes, Francena Abendroth, Andre Adami, Misha Pavel, Tracy A Zitzelberger, Jeffrey A Kaye. Unobtrusive assessment of activity patterns associated with mild cognitive impairment. <em>Alzheimer's & Dementia</em>. 2008</p></li><li><p id="holschneider1990real">Matthias Holschneider, Kronl, Richard -Martinet, Jean Morlet, Ph Tchamitchian. A real-time algorithm for signal analysis with the help of the wavelet transform. <em>Wavelets</em>. 1990</p></li><li><p id="fowler2005redundant">James E Fowler. The redundant discrete wavelet transform and additive noise. <em>IEEE Signal Processing Letters</em>. 2005</p></li><li><p id="lee2019pywavelets">Gregory R Lee, Ralf Gommers, Filip Waselewski, Kai Wohlfahrt, Aaron O’Leary. PyWavelets: A Python package for wavelet analysis. <em>Journal of Open Source Software</em>. 2019</p></li><li><p id="welch1967use">Peter Welch. The use of fast Fourier transform for the estimation of power spectra: a method based on time averaging over short, modified periodograms. <em>IEEE Transactions on audio and electroacoustics</em>. 1967</p></li><li><p id="activitybouts">Eric J Shiroma, I-Min Lee, Mitchell A Schepps, Masamitsu Kamada, Tamara B Harris. Physical activity patterns and mortality: the weekend warrior and activity bouts. <em>Medicine and science in sports and exercise</em>. 2019</p></li><li><p id="boutduration">John M Jakicic, William E Kraus, Kenneth E Powell, Wayne W Campbell, Kathleen F Janz, Richard P Troiano, Kyle Sprow, Andrea Torres, Katrina L Piercy, 2018 Physical Activity Guidelines Advisory Committee, others. Association between bout duration of physical activity and health: systematic review. <em>Medicine and science in sports and exercise</em>. 2019</p></li><li><p id="campbell2011measuring">Ian H Campbell, Daniel Austin, Tamara L Hayes, Misha Pavel, Thomas Riley, Nora Mattek, Jeffrey Kaye. Measuring changes in activity patterns during a norovirus epidemic at a retirement community. <em>2011 Annual International Conference of the IEEE Engineering in Medicine and Biology Society</em>. 2011</p></li><li><p id="kyrdalen2019associations">Ingebjørg Lavrantsdatter Kyrdalen, Pernille Thingstad, S, Leiv vik, Heidi Ormstad. Associations between gait speed and well-known fall risk factors among community-dwelling older adults. <em>Physiotherapy research international</em>. 2019</p></li><li><p id="piau2020will">Antoine Piau, Nora Mattek, Rachel Crissey, Zachary Beattie, Hiroko Dodge, Jeffrey Kaye. When will my patient fall? Sensor-based in-home walking speed identifies future falls in older adults. <em>The Journals of Gerontology: Series A</em>. 2020</p></li><li><p id="buracchio2010trajectory">Teresa Buracchio, Hiroko H Dodge, Diane Howieson, Dara Wasserman, Jeffrey Kaye. The trajectory of gait speed preceding mild cognitive impairment. <em>Archives of neurology</em>. 2010</p></li><li><p id="rana2016gait">Rajib Rana, Daniel Austin, Peter G Jacobs, Mohanraj Karunanithi, Jeffrey Kaye. Gait velocity estimation using time-interleaved between consecutive passive IR sensor activations. <em>IEEE Sensors Journal</em>. 2016</p></li><li><p id="zhang2009heart">Gus Q Zhang, Weiguo Zhang. Heart rate, lifespan, and mortality risk. <em>Ageing research reviews</em>. 2009</p></li><li><p id="eguchi2009nocturnal">Kazuo Eguchi, Satoshi Hoshide, Joji Ishikawa, Thomas G Pickering, Joseph E Schwartz, Kazuyuki Shimada, Kazuomi Kario. Nocturnal non-dipping of heart rate predicts cardiovascular events in hypertensive patients. <em>Journal of hypertension</em>. 2009</p></li><li><p id="johansen2013resting">Christine D Johansen, Rasmus H Olsen, Lene R Pedersen, Preman Kumarathurai, Mette R Mouridsen, Zeynep Binici, Theodoros Intzilakis, Lars Køber, Ahmad Sajadieh. Resting, night-time, and 24 h heart rate as markers of cardiovascular risk in middle-aged and elderly men and women with no apparent heart disease. <em>European heart journal</em>. 2013</p></li><li><p id="ranta2019emfit">Jukka Ranta, Timo Aittokoski, Mirja Tenhunen, Mikko Alasaukko-oja. EMFIT QS heart rate and respiration rate validation. <em>Biomedical Physics & Engineering Express</em>. 2019</p></li><li><p id="kim2004more">Tae-Hwan Kim, Halbert White. On more robust estimation of skewness and kurtosis. <em>Finance Research Letters</em>. 2004</p></li><li><p id="akima1970new">Hiroshi Akima. A new method of interpolation and smooth curve fitting based on local procedures. <em>Journal of the ACM (JACM)</em>. 1970</p></li><li><p id="saner2021case">Hugo Saner, Narayan Schuetz, Philipp Buluschek, Guillaume Du Pasquier, Giuseppe Ribaudo, Prabitha Urwyler, Tobias Nef. Case Report: Ambient Sensor Signals as Digital Biomarkers for Early Signs of Heart Failure Decompensation. <em>Frontiers in cardiovascular medicine</em>. 2021</p></li><li><p id="burman2017sleep">Deepa Burman. Sleep disorders: sleep-related breathing disorders. <em>FP essentials</em>. 2017</p></li><li><p id="chokroverty2010overview">Sudhansu Chokroverty, others. Overview of sleep & sleep disorders. <em>Indian J Med Res</em>. 2010</p></li><li><p id="schutz2021contactless">Narayan Schütz, Hugo Saner, Angela Botros, Bruno Pais, Valérie Santschi, Philipp Buluschek, Daniel Gatica-Perez, Prabitha Urwyler, René M Müri, Tobias Nef, others. Contactless Sleep Monitoring for Early Detection of Health Deteriorations in Community-Dwelling Older Adults: Exploratory Study. <em>JMIR mHealth and uHealth</em>. 2021</p></li><li><p id="bosch2010prevalence">JLH Ruud Bosch, Jeffrey P Weiss. The prevalence and causes of nocturia. <em>The Journal of urology</em>. 2010</p></li><li><p id="stewart1992nocturia">Ronald B Stewart, Mary T Moore, Franklin E May, Ronald G Marks, William E Hale. Nocturia: a risk factor for falls in the elderly. <em>Journal of the American Geriatrics Society</em>. 1992</p></li><li><p id="awais2019internet">Muhammad Awais, Mohsin Raza, Kamran Ali, Zulfiqar Ali, Muhammad Irfan, Omer Chughtai, Imran Khan, Sunghwan Kim, Masood Ur Rehman. An Internet of Things based bed-egress alerting paradigm using wearable sensors in elderly care environment. <em>Sensors</em>. 2019</p></li><li><p id="itani2017short">Osamu Itani, Maki Jike, Norio Watanabe, Yoshitaka Kaneita. Short sleep duration and health outcomes: a systematic review, meta-analysis, and meta-regression. <em>Sleep medicine</em>. 2017</p></li><li><p id="jike2018long">Maki Jike, Osamu Itani, Norio Watanabe, Daniel J Buysse, Yoshitaka Kaneita. Long sleep duration and health outcomes: a systematic review, meta-analysis and meta-regression. <em>Sleep medicine reviews</em>. 2018</p></li><li><p id="westwood2017prolonged">Andrew J Westwood, Alexa Beiser, Nikita Jain, Jay Himali, ra J, Charles DeCarli, Sanford H Auerbach, Matthew P Pase, Sudha Seshadri. Prolonged sleep duration as a marker of early neurodegeneration predicting incident dementia. <em>Neurology</em>. 2017</p></li><li><p id="roth2007insomnia">Thomas Roth. Insomnia: definition, prevalence, etiology, and consequences. <em>Journal of clinical sleep medicine</em>. 2007</p></li><li><p id="peever2017biology">John Peever, Patrick M Fuller. The biology of REM sleep. <em>Current Biology</em>. 2017</p></li><li><p id="cooke2006sleep">Jana R Cooke, Sonia Ancoli-Israel. Sleep and its disorders in older adults. <em>Psychiatric Clinics</em>. 2006</p></li><li><p id="shaffer2017overview">Fred Shaffer, James P Ginsberg. An overview of heart rate variability metrics and norms. <em>Frontiers in public health</em>. 2017</p></li><li><p id="didikoglu2020longitudinal">Altug Didikoglu, Asri Maharani, Gindo Tampubolon, Maria Mercè Canal, Antony Payton, Neil Pendleton. Longitudinal sleep efficiency in the elderly and its association with health. <em>Journal of sleep research</em>. 2020</p></li><li><p id="ohishi2021hypertension">Mitsuru Ohishi, Takuro Kubozono, Koji Higuchi, Yuichi Akasaki. Hypertension, cardiovascular disease, and nocturia: a systematic review of the pathophysiological mechanisms. <em>Hypertension Research</em>. 2021</p></li>
                             </ol>
                         </div>
                     </div>
 
-                    <div id="about" class="row">
+                    <div id="about" class="row section">
                         <div class="col">
-                            <H2>About</H2>
+                            <H2 class="section-title">6. About</H2>
 
                             <div class="row">
                                 <div class="col-lg-6">
